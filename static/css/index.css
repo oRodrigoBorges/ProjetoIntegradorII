@@ -1,0 +1,165 @@
+body {
+    text-align: justify;
+}
+
+h2 {
+    font-family: "Playwrite HR", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.headerCabecalho {
+    height: 7em;
+}
+
+.headerCabecalhoDivNome {
+    padding: 1.5em 0em 0em 0em;
+    text-align: center;
+}
+
+.headerContainerCabecalhoDivLinks {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 9em 2em 9em;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sectionArtigos {
+}
+
+.sectionContainerArtigosImpares {
+    width: 100%;
+    max-width: 60em; 
+    margin: 2em auto; 
+    overflow: hidden; 
+}
+
+.sectionContainerArtigosImpares img {
+    float: left; 
+    margin-right: 20px;
+    margin-bottom: 10px;
+    max-width: 40%;
+    height: auto;
+}
+
+.sectionContainerArtigosPares {
+    width: 100%;
+    max-width: 60em;
+    margin: 2em auto;
+    overflow: hidden;
+}
+
+.sectionContainerArtigosPares img {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    max-width: 40%;
+    height: auto;
+}
+
+.artigoSobreGramado {
+    
+}
+
+.fotoArtigos {
+    height: 600px;
+    width: 800px;
+}
+
+.sectionContainerEntreEmContato {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 15em 15em;
+    grid-template-rows: 3em 10em;
+    grid-template-areas:
+      "h2EntreEmContato h2EntreEmContato"
+      "pEntreEmContato formEntreEmContato";
+}
+
+.h2EntreEmContato {
+    grid-area: h2EntreEmContato;
+}
+
+.pEntreEmContato {
+    grid-area: pEntreEmContato;
+    margin-right: 1.5em;
+}
+
+.formEntreEmContato {
+    grid-area: formEntreEmContato;
+}
+
+.sectionContainerEntreEmContato h2 {
+    text-align: center;
+}
+
+.footer {
+    margin: 2em;
+}
+
+.footerDivContainerRedesSociais {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 3em 3em;
+    grid-template-areas:
+      "instagram twitter"
+      "facebook whatsapp";
+    margin: 1em 0 2em 0em;
+}
+
+.instagram {
+    grid-area: instagram;
+    margin-bottom: 1em;
+}
+
+.twitter {
+    grid-area: twitter;
+    margin-bottom: 1em;
+}
+
+.facebook {
+    grid-area: facebook;
+}
+
+.whatsapp {
+    grid-area: whatsapp;
+}
+
+.iconRedeSocial {
+    width: 64px;
+    height: 64px;
+}
+
+.divRedeSocial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.footerDivNossoGrupo h2 {
+    margin-bottom: 2em;
+}
+
+.footerDivNossoGrupo p {
+    text-align: center;
+    padding: 1em;
+}
