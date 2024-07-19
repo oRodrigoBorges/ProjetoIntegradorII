@@ -1,5 +1,6 @@
 body {
     text-align: justify;
+    width: 100%;
 }
 
 h2 {
@@ -162,4 +163,95 @@ p {
 .footerDivNossoGrupo p {
     text-align: center;
     padding: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+    .headerCabecalho {
+        height: auto;
+    }
+
+    .headerContainerCabecalhoDivLinks {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em 2em;
+    }
+
+    .headerContainerCabecalhoDivLinks a {
+        margin-bottom: 1em;
+    }
+
+    .fotoArtigos {
+        height: auto;
+        width: 100%;
+    }
+
+    .sectionContainerArtigosImpares img,
+    .sectionContainerArtigosPares img {
+        float: none;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .sectionContainerEntreEmContato {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+          "h2EntreEmContato"
+          "pEntreEmContato"
+          "formEntreEmContato";
+    }
+
+    .pEntreEmContato {
+        margin: 1em;
+    }
+
+    .formEntreEmContato input,
+    .formEntreEmContato textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .formEntreEmContato input {
+        margin-bottom: 0.5em;
+    }
+
+    .footerDivContainerRedesSociais {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "instagram twitter"
+          "facebook whatsapp";
+    }
+
+    .footerDivContainerRedesSociais .divRedeSocial {
+        margin: 0.5em 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .headerContainerCabecalhoDivLinks {
+        padding: 1em 1em;
+    }
+
+    .headerContainerCabecalhoDivLinks a {
+        font-size: 0.9em;
+    }
+
+    .sectionArtigos {
+        padding: 0 1em;
+    }
+
+    .footerDivContainerRedesSociais {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "instagram"
+          "twitter"
+          "facebook"
+          "whatsapp";
+    }
+
+    .footerDivContainerRedesSociais .divRedeSocial {
+        margin: 0.5em 0;
+    }
 }
